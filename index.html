@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+</head>
+<style>
+
+    .container{
+                margin: 90px 0px 0px 50px;
+                width: 800px;
+                background-color: rgb(234, 230, 230);
+                display: grid;
+                position: relative; 
+                left: 20%;
+                /* grid-template-columns: auto auto auto auto; */
+                 /* frection */
+                /* grid-template-columns: 1fr 1fr  1fr ; */
+
+                /* repet function */
+                grid-template-columns:   repeat(4,auto) ;
+                grid-template-rows:  150px 190px  150px;
+                  
+
+                grid-gap: 20px;
+    }     
+    .div1{
+        background-color: aquamarine;
+          grid-column: 1/5;
+          
+    }
+    .div2{
+        background-color: pink;
+    }
+    .div3{
+        background-color: deepskyblue;
+    }
+    .div4{
+        background-color: yellow;
+         grid-column: 3/-1;
+         gap: 2/-4;
+    }
+    .div5{
+        background-color: greenyellow;
+    }
+    .div6{
+        background-color: orange;
+    }
+</style>
+
+<body>
+    <div class="container ">
+       
+      
+       <div class="div1">Frist</div>
+       <div class="div2">Secound</div>
+       <div class="div3">thrid</div>
+       <div class="div4">forth</div>
+       <div class="div5">five</div>
+       <div class="div6">six</div>
+       </div>
+
+
+
+</body>
+</html>
